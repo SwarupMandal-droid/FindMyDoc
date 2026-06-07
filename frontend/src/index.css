@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   MATERIAL SYMBOLS
+   ============================================================ */
+.material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* ============================================================
+   MEDICAL BACKGROUND ICON ANIMATIONS
+   Three motion presets — mix them across icons for organic feel.
+   ============================================================ */
+
+/* Gentle vertical bob */
+@keyframes medFloat {
+    0%, 100% { transform: translateY(0px);   }
+    50%       { transform: translateY(-20px); }
+}
+
+/* Slow horizontal sway */
+@keyframes medDrift {
+    0%, 100% { transform: translateX(0px);   }
+    50%       { transform: translateX(16px);  }
+}
+
+/* Lazy diagonal wander */
+@keyframes medSway {
+    0%, 100% { transform: translate(0px,   0px);   }
+    33%       { transform: translate(12px, -16px);  }
+    66%       { transform: translate(-9px,  10px);  }
+}
+
+/* Slow lazy spin — used for cross/plus icons */
+@keyframes medSpin {
+    0%   { transform: rotate(0deg);   }
+    100% { transform: rotate(360deg); }
+}
+
+/* Subtle heartbeat pulse */
+@keyframes medPulse {
+    0%, 100% { transform: scale(1);    }
+    50%       { transform: scale(1.12); }
+}
+
+/* ============================================================
+   CANONICAL NEO-BRUTALIST DESIGN SYSTEM
+   Single prefix: neo-brutal-*
+   ============================================================ */
+
+/* --- Borders --- */
+.neo-brutal-border    { border: 4px solid #1c1b1b; }
+.neo-brutal-border-sm { border: 2px solid #1c1b1b; }
+
+/* --- Shadows --- */
+.neo-brutal-shadow    { box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 1); }
+.neo-brutal-shadow-sm { box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1); }
+.neo-brutal-shadow-lg { box-shadow: 12px 12px 0px 0px rgba(0, 0, 0, 1); }
+
+/* --- Interactive States --- */
+.neo-brutal-hover:hover {
+    box-shadow: 12px 12px 0px 0px rgba(28, 27, 27, 1);
+    transform: translate(-2px, -2px);
+}
+.neo-brutal-active:active {
+    box-shadow: 2px 2px 0px 0px rgba(28, 27, 27, 1);
+    transform: translate(2px, 2px);
+}
+
+/* --- Angle decorations --- */
+.neo-brutal-tilt-neg { transform: rotate(-1.5deg); }
+.neo-brutal-tilt-pos { transform: rotate(1.5deg); }
+
+/* ============================================================
+   LEGACY ALIASES — backward compatibility with existing pages.
+   Do NOT use in NEW components. Use neo-brutal-* above.
+   ============================================================ */
+.neo-brutalism-border  { border: 4px solid #1c1b1b; }
+.neo-brutalism-shadow  { box-shadow: 8px 8px 0px 0px rgba(0,0,0,1); }
+.comic-angle           { transform: rotate(-1.5deg); }
+.counter-rotate        { transform: rotate(1.5deg); }
+
+.neo-brutalist-border                { border: 4px solid #1c1b1b; }
+.neo-brutalist-shadow                { box-shadow: 8px 8px 0px 0px rgba(28, 27, 27, 1); }
+.neo-brutalist-shadow-sm             { box-shadow: 4px 4px 0px 0px rgba(28, 27, 27, 1); }
+.neo-brutalist-shadow-hover:hover    { box-shadow: 12px 12px 0px 0px rgba(28, 27, 27, 1); transform: translate(-2px, -2px); }
+.neo-brutalist-shadow-active:active  { box-shadow: 2px 2px 0px 0px rgba(28, 27, 27, 1); transform: translate(2px, 2px); }
+
+.ink-trap-border     { border: 4px solid #1c1b1b; }
+.ink-trap-border-sm  { border: 2px solid #1c1b1b; }
+.neo-shadow          { box-shadow: 4px 4px 0px 0px rgba(0,0,0,1); }
+.neo-shadow-lg       { box-shadow: 8px 8px 0px 0px rgba(0,0,0,1); }
+.ink-trap            { text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; }
+
+.rotate-z-1       { transform: rotate(1deg); }
+.rotate-z-neg-1   { transform: rotate(-1deg); }
+.rotate-z-neg-1-5 { transform: rotate(-1.5deg); }
+
+/* ============================================================
+   PAGE-SPECIFIC LAYOUTS
+   ============================================================ */
+/* Login page split canvas — left panel updated to match new bg color */
+.login-canvas {
+    background: linear-gradient(105deg, #F9B830 49.9%, #1c1b1b 50%, #1c1b1b 50.1%, #efff43 50.2%);
+    min-height: 100vh;
+}
+@media (max-width: 768px) {
+    .login-canvas { background: #F9B830; }
+}
+
+/* ============================================================
+   GLOBAL BASE STYLES
+   Background color: #F9B830 (warm golden amber — as specified by user)
+   ============================================================ */
+body {
+    background-color: #F9B830;
+    color: #1c1b1b;
+    font-family: 'Hanken Grotesk', sans-serif;
+    overflow-x: hidden;
+}

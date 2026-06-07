@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOC_FINDER.EXE</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Hanken+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "on-primary": "#ffffff",
+              "on-secondary": "#ffffff",
+              "surface-container-highest": "#e5e2e1",
+              "surface-container-low": "#f6f3f2",
+              "error": "#ba1a1a",
+              "secondary-container": "#0448ff",
+              "primary": "#5c6300",
+              "on-primary-fixed": "#1b1d00",
+              "secondary": "#0035c6",
+              "surface-container": "#f0edec",
+              "on-secondary-container": "#d6daff",
+              "tertiary-fixed": "#ffdad9",
+              "surface-dim": "#dcd9d9",
+              "outline": "#787961",
+              "on-background": "#1c1b1b",
+              "on-secondary-fixed": "#001257",
+              "on-error": "#ffffff",
+              "surface-container-high": "#ebe7e7",
+              "on-tertiary-fixed": "#410008",
+              "error-container": "#ffdad6",
+              "inverse-surface": "#313030",
+              "surface-container-lowest": "#ffffff",
+              "on-primary-fixed-variant": "#454b00",
+              "on-primary-container": "#6c7500",
+              "primary-container": "#efff43",
+              "on-tertiary": "#ffffff",
+              "surface": "#F9B830",
+              "outline-variant": "#c8c8ad",
+              "inverse-primary": "#c2d000",
+              "surface-bright": "#F9B830",
+              "inverse-on-surface": "#f3f0ef",
+              "tertiary": "#bf002c",
+              "on-surface-variant": "#474834",
+              "on-surface": "#1c1b1b",
+              "primary-fixed-dim": "#c2d000",
+              "secondary-fixed": "#dde1ff",
+              "tertiary-container": "#fff1f0",
+              "surface-variant": "#e5e2e1",
+              "primary-fixed": "#deed30",
+              "on-secondary-fixed-variant": "#0033c0",
+              "background": "#F9B830",
+              "on-tertiary-container": "#df0035",
+              "on-error-container": "#93000a",
+              "surface-tint": "#5c6300",
+              "secondary-fixed-dim": "#b9c3ff",
+              "tertiary-fixed-dim": "#ffb3b2",
+              "on-tertiary-fixed-variant": "#92001f"
+            },
+            borderRadius: {
+              "DEFAULT": "0.25rem",
+              "lg": "0.5rem",
+              "xl": "0.75rem",
+              "full": "9999px"
+            },
+            spacing: {
+              "margin-desktop": "40px",
+              "stack-sm": "8px",
+              "unit": "4px",
+              "margin-mobile": "20px",
+              "gutter": "16px",
+              "stack-lg": "48px",
+              "stack-md": "24px"
+            },
+            fontFamily: {
+              "button-text": ["Anton"],
+              "body-md": ["Hanken Grotesk"],
+              "body-sm": ["Hanken Grotesk"],
+              "headline-lg-mobile": ["Anton"],
+              "headline-lg": ["Anton"],
+              "tag-label": ["JetBrains Mono"],
+              "display-xl": ["Anton"]
+            },
+            fontSize: {
+              "button-text": ["18px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "400"}],
+              "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "500"}],
+              "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+              "headline-lg-mobile": ["32px", {"lineHeight": "36px", "fontWeight": "400"}],
+              "headline-lg": ["40px", {"lineHeight": "44px", "fontWeight": "400"}],
+              "tag-label": ["14px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "700"}],
+              "display-xl": ["72px", {"lineHeight": "72px", "fontWeight": "400"}]
+            }
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
