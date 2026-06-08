@@ -9,7 +9,3 @@ python manage.py collectstatic --no-input
 python manage.py migrate
 
 
-python manage.py createsuperuser \
-  --noinput \
-  --username admin \
-  --email findmydoc@gmail.com|| true
